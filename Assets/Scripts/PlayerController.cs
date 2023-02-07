@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         horizInput = Input.GetAxis("Horizontal");
         vertInput = Input.GetAxis("Vertical");
     }
-    private void FixedUpdate()
+    private void FixedUpLadate()
     {
         Vector3 movement = new Vector3(horizInput, 0, vertInput)  * Time.deltaTime * speed * 100;
         rb.velocity = movement;
